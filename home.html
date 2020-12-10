@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <h3 class="no-item" text-center *ngIf="loadItems().length === 0">
+    Check Off The Days You Workout!    
+  </h3>
+ 
+  <ul class = "list">
+    <li class = "item item-checkbox">
+       Monday
+       <label class = "checkbox">
+          <input type = "checkbox" />
+       </label>
+    </li>
+  
+    <li class = "item item-checkbox">
+       Tuesday
+       <label class = "checkbox">
+          <input type = "checkbox" />
+       </label>
+    </li>
+ 
+    <li class = "item item-checkbox">
+       Wednesday
+       <label class = "checkbox">
+          <input type = "checkbox" />
+       </label>
+    </li>
+ 
+    <li class = "item item-checkbox">
+       Thursday
+       <label class = "checkbox">
+          <input type = "checkbox" />
+       </label>
+    </li>
+    <li class = "item item-checkbox">
+      Friday
+      <label class = "checkbox">
+         <input type = "checkbox" />
+      </label>
+   </li>
+   <li class = "item item-checkbox">
+    Satureday
+    <label class = "checkbox">
+       <input type = "checkbox" />
+    </label>
+ </li>
+ <li class = "item item-checkbox">
+  Sunday: Rest
+  <label class = "checkbox">
+     <input type = "checkbox" />
+  </label>
+ </ul>
+</ion-content>
